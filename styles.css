@@ -1,9 +1,41 @@
-/* CSS Reset (gets rid of default styling)
+/* CSS Reset (gets rid of defa t styling)
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
+/* Navigation Bar Setting */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+.active {
+  background-color: #222;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #333;
+}
+
+/*------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,6 +60,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	background: black;
 }
 body {
 	line-height: 1;
@@ -58,6 +91,7 @@ h1 {
   color: white;
   font-size: 35px;
   text-shadow: 1px 1px 5px #202020;
+	padding: 10px 20px 0px 10px;
 }
 h2 {
   margin: 0px 0px 10px 0px;
@@ -67,14 +101,13 @@ h2 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 20px;
   /* background-color: #0466D2; */
   /* green: #38ba61, blue: #044DE2 */
-  background-image: linear-gradient(to right, #38ba61 , #4B90F7);
+  background-image: linear-gradient(to right, #3d486c , #3d486c);
 }
 main {
   padding: 40px;
-  background: #f2f2f2;
+  background: #3d486c;
   max-width: 1300px;
   margin: auto;
 	left: 10;
