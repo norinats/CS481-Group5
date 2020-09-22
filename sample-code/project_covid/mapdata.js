@@ -1,17 +1,17 @@
 var simplemaps_usmap_mapdata={
   main_settings: {
     //General settings
-		width: "700", //or 'responsive'
+		width: "1200", //or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
 
 		//State defaults
 		state_description: "State description",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
-    state_url: "https://simplemaps.com",
-    border_size: 1.5,
+    state_color: "#bf8040",
+    state_hover_color: "#996633",
+    state_url: "http://localhost:8000/profile.php",
+    border_size: 2,
     border_color: "#ffffff",
     all_states_inactive: "no",
     all_states_zoomable: "no",
@@ -65,7 +65,7 @@ var simplemaps_usmap_mapdata={
 		div: "map",
     auto_load: "yes",
     rotate: "0",
-    url_new_tab: "yes",
+    url_new_tab: "no",
     images_directory: "default",
     import_labels: "no",
     fade_time: 0.1,

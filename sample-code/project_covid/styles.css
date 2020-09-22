@@ -60,9 +60,9 @@ h1 {
   text-shadow: 1px 1px 5px #202020;
 }
 h2 {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 30px;
 }
 
 body {
@@ -74,9 +74,10 @@ body {
 }
 main {
   padding: 40px;
-  background: #ffffff;
-  max-width: 900px;
+  background: #f2f2f2;
+  max-width: 1300px;
   margin: auto;
+	left: 10;
 }
 p {
   margin: 0px 0px 10px 0px;

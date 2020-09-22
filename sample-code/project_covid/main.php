@@ -13,8 +13,8 @@
     <main>
     <div id="content">
         <div id="lobbytitle">
-            <h2>US Map demo</h2>
-            <p>50 states and their COVID stats:</p><br>
+            <h2>US MAP</h2>
+            <p>Click on a state to see their COVID statistics:</p><br>
         </div>
         <div id="lobbyform">
             <form id="createGame" method="POST" action="game.php">
