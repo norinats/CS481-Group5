@@ -10,7 +10,7 @@ var simplemaps_usmap_mapdata={
 		state_description: "State description",
     state_color: "#bf8040",
     state_hover_color: "#996633",
-    state_url: "http://localhost:8000/www/project_covid/profile.php",
+    state_url: "https://safe-plains-70114.herokuapp.com/profile.php",
     border_size: 1.5,
     border_color: "#3d486c",
     all_states_inactive: "no",
