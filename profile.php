@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="profile.css">
     </head>
 
@@ -14,6 +15,11 @@
       </ul>
     </header>
 
+    <?php 
+        $command = escapeshellcmd('get_api.py WA');
+        $output = shell_exec($command);
+        echo $output;
+    ?>
     
     </body>
 </html>
