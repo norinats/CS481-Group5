@@ -78,7 +78,7 @@ var simplemaps_usmap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "http://localhost:8000/www/project_covid/hawaiiExample.php"
+      url: "default"
     },
     AK: {
       name: "Alaska",
