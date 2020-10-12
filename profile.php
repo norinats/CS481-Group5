@@ -1,13 +1,9 @@
-<?php
-$currentState =  $_COOKIE['selected'];
-?>
-
 <html>
 <head>
     <title>?????</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<title><?php echo $_GET['title']; ?></title>
+<title><?php //echo $currentState; ?></title>
 
 <body>
   <header>
@@ -20,11 +16,10 @@ $currentState =  $_COOKIE['selected'];
   </div>
   </header>
 
-
-  <h1><?php echo $currentState ?></h1>
+  <h1 id="state-title"></h1>
+  
 </body>
 </html>
-
 
 <!-- MAKE NAVBAR STICKY -->
     <script>
@@ -40,6 +35,25 @@ $currentState =  $_COOKIE['selected'];
         navbar.classList.remove("sticky");
       }
     }
+
+    function getCookie(cookie) {
+        var name = cookie + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    var selected_state = getCookie("selected");
+    document.getElementById("state-title").innerHTML = selected_state;
     </script>
 
 </body>

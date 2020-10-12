@@ -68,7 +68,7 @@
         check_max();
         map.mapdata.state_specific[state].color=me.selected_color;
         selected.push(state);
-        document.cookie = "selected="+state;
+        document.cookie = "selected="+state+"; path=/";
         done(state);
       }
     }
