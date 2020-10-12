@@ -18,6 +18,7 @@
     <div id="content">
         <script src="mapdata.js"></script>
         <script src="usmap.js"></script>
+        <script src="select.js"></script>
         <div id="map"></div>
     </div>
     </main>
