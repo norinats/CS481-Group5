@@ -1,9 +1,9 @@
 <html>
 <head>
-    <title>?????</title>
+    <title>???</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
-<title><?php //echo $currentState; ?></title>
 
 <body>
   <header>
@@ -17,15 +17,17 @@
   </header>
 
   <h1 id="state-title"></h1>
-
-  <?php 
-        //$state = $_GET['state_specific'];
+  <div id="stats">
+      <table>
+      <?php 
         $state = htmlentities($_COOKIE['selected'], 3, 'UTF-8');
         $command = "get_api.py [$state]";
         $cmd = escapeshellcmd($command);
         $output = shell_exec($cmd);
         echo $output;
-    ?>
+        ?>
+      </table>
+  </div>
   
 </body>
 </html>
