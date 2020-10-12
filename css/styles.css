@@ -1,0 +1,171 @@
+/* CSS Reset (gets rid of defa t styling)
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Navigation Bar Setting */
+#navbar {
+  list-style-type: none;
+  z-index:1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+#navbar li a.active {
+  background-color: #222;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li a:hover {
+  background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	background: black;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=========== START ============*/
+html {
+
+}
+h1, h2, h3, h4, h5 {
+  color: black;
+  font-weight: bold;
+    font-family: Candara;
+}
+h1 {
+  color: white;
+  font-size: 35px;
+  text-shadow: 1px 1px 5px #202020;
+	padding: 10px 20px 0px 10px;
+}
+h2 {
+  margin: 0px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #0466D2; */
+  /* green: #38ba61, blue: #044DE2 */
+  background-image: linear-gradient(to right, #3d486c , #3d486c);
+}
+main {
+  padding: 40px;
+  background: #3d486c;
+  max-width: 1300px;
+  margin: auto;
+	left: 10;
+}
+p {
+  margin: 0px 0px 10px 0px;
+}
+label {
+  font-size: 14px;
+}
+input, textarea {
+  margin: 10px 0px 10px 0px;
+  padding: 16px 16px;
+  font-size: 16px;
+}
+input[type=number], textarea {
+  background-color: #f2f2f2;
+  border: none;
+  min-width: 200px;
+}
+
+a[type="button"] {
+  background-color: #445175;
+	border-radius: 5px;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 2px;
+  cursor: pointer;
+	transition: all .12s ease-in-out;
+}
+
+a[type="button"]:hover {
+	background-color: #5c6f9e;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #3d486c;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
