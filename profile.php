@@ -1,4 +1,7 @@
-<!doctype html>
+<?php
+$currentState =  $_COOKIE['selected'];
+?>
+
 <html>
 <head>
     <title>?????</title>
@@ -10,20 +13,34 @@
   <header>
     <div id="navbar">
     <li><h1>COVID TRACKER</h1></li>
-    <li><a class="active" href="index.php">Home</a></li>
+    <li><a href="index.php">Home</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#covidinfo">COVID-19 Info</a></li>
     <li><a href="#about">About</a></li>
   </div>
   </header>
-  <a type="button" href="index.php">Back</a>
-<div class="search-div">
-<?php echo "<img src={$_GET['imgsrc']}>"; ?>
-<h2><?php echo $_GET['title']; ?></h2>
-<strong>Overview: </strong><?php echo $_GET['plot']; ?><br>
-<strong>Actors/Actresses: </strong><?php echo $_GET['actors']; ?>
-</div>
+
+
+  <h1><?php echo $currentState ?></h1>
 </body>
 </html>
 
-<!-- We used $_GET to get the information we previously established on another page $_GET['variableName'] -->
+
+<!-- MAKE NAVBAR STICKY -->
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+</body>
+</html>
