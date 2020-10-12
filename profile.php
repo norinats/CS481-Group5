@@ -17,6 +17,15 @@
   </header>
 
   <h1 id="state-title"></h1>
+
+  <?php 
+        //$state = $_GET['state_specific'];
+        $state = htmlentities($_COOKIE['selected'], 3, 'UTF-8');
+        $command = "get_api.py [$state]";
+        $cmd = escapeshellcmd($command);
+        $output = shell_exec($cmd);
+        echo $output;
+    ?>
   
 </body>
 </html>
