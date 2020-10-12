@@ -4,13 +4,8 @@
         <link rel="stylesheet" href="profile.css">
     </head>
 
-    <body onload="getState()">
+    <body>
 
-    <script>
-        function getState() {
-             
-        };
-    </script>
     <header>
         <ul>
         <li><h1>COVID TRACKER</h1></li>
@@ -22,6 +17,7 @@
     </header>
 
     <?php 
+        //$state = $_GET['state_specific'];
         $state = "WA";
         $command = "get_api.py [$state]";
         $cmd = escapeshellcmd($command);

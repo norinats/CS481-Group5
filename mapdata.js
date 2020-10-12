@@ -11,6 +11,7 @@ var simplemaps_usmap_mapdata={
     state_color: "#bf8040",
     state_hover_color: "#996633",
     //state_url: "https://safe-plains-70114.herokuapp.com/profile.php",
+    //state_url: "http://covidtracker/CS481-Group5/profile.php?state_specific=" + state_specific[state],
     state_url: "http://covidtracker/CS481-Group5/profile.php",
     border_size: 1.5,
     border_color: "#3d486c",
