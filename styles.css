@@ -5,19 +5,20 @@
 */
 
 /* Navigation Bar Setting */
-ul {
+#navbar {
   list-style-type: none;
+  z-index:1;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: black;
 }
 
-li {
+#navbar li {
   float: left;
 }
 
-li a {
+#navbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -26,13 +27,23 @@ li a {
 	font-weight: bold;
 }
 
-.active {
+#navbar li a.active {
   background-color: #222;
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+#navbar li a:hover {
   background-color: #333;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /*------------------------------------------------*/
@@ -127,4 +138,34 @@ input[type=number], textarea {
   background-color: #f2f2f2;
   border: none;
   min-width: 200px;
+}
+
+a[type="button"] {
+  background-color: #445175;
+	border-radius: 5px;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 10px 2px;
+  cursor: pointer;
+	transition: all .12s ease-in-out;
+}
+
+a[type="button"]:hover {
+	background-color: #5c6f9e;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #3d486c;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

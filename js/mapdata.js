@@ -1,3 +1,4 @@
+
 var simplemaps_usmap_mapdata={
   main_settings: {
     //General settings
@@ -10,7 +11,8 @@ var simplemaps_usmap_mapdata={
 		state_description: "State description",
     state_color: "#bf8040",
     state_hover_color: "#996633",
-    state_url: "https://safe-plains-70114.herokuapp.com/profile.php",
+    //state_url: "http://localhost:8000/www/project_covid/profile.php",
+    state_url: "http://covidtracker/CS481-Group5/profile.php",
     border_size: 1.5,
     border_color: "#3d486c",
     all_states_inactive: "no",
@@ -63,7 +65,7 @@ var simplemaps_usmap_mapdata={
 
 		//Advanced settings
 		div: "map",
-    auto_load: "yes",
+    auto_load: "no",
     rotate: "0",
     url_new_tab: "no",
     images_directory: "default",
@@ -77,7 +79,7 @@ var simplemaps_usmap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "http://localhost:8000/www/project_covid/hawaiiExample.php"
+      url: "default"
     },
     AK: {
       name: "Alaska",
@@ -473,23 +475,23 @@ var simplemaps_usmap_mapdata={
     }
   },
   locations: {
-    "0": {
-      name: "New York",
-      lat: 40.71,
-      lng: -74,
-      description: "default",
-      color: "default",
-      url: "default",
-      type: "default",
-      size: "default"
-    },
-    "1": {
-      name: "Anchorage",
-      lat: 61.2180556,
-      lng: -149.9002778,
-      color: "default",
-      type: "circle"
-    }
+    //"0": {
+      //name: "New York",
+      //lat: 40.71,
+      //lng: -74,
+      //description: "default",
+      //color: "default",
+      //url: "default",
+      //type: "default",
+      //size: "default"
+    //},
+    //"1": {
+      //name: "Anchorage",
+      //lat: 61.2180556,
+      //lng: -149.9002778,
+      //color: "default",
+      //type: "circle"
+    //}
   },
   labels: {
     NH: {
