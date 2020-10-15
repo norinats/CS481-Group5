@@ -440,7 +440,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "no"
     },
     VI: {
       name: "Virgin Islands",
@@ -448,7 +448,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "no"
     },
     PR: {
       name: "Puerto Rico",
@@ -456,7 +456,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "no"
     },
     AS: {
       name: "American Samoa",
@@ -464,7 +464,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "no"
     },
     MP: {
       name: "Northern Mariana Islands",
@@ -472,7 +472,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "no"
     }
   },
   locations: {
