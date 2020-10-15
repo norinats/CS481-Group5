@@ -20,7 +20,6 @@
         <script src="js/mapdata.js"></script>
         <script src="js/usmap.js"></script>
         <script type="text/javascript" src="js/select.js"></script>
-        
         <script src="js/update_map.js"></script>
         <div id="map"></div>
     </div>

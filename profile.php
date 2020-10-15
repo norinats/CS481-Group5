@@ -18,20 +18,18 @@
 
   <h1 id="state-title"></h1>
   <div id="stats">
+      <p id="test"></p>
       <table>
-      <?php 
-        $state = htmlentities($_COOKIE['selected'], 3, 'UTF-8');
-        $command = "get_api.py [$state]";
-        $cmd = escapeshellcmd($command);
-        $output = shell_exec($cmd);
-        echo $output;
-        ?>
+        <tr><td>Total Number Cases:</td><td id="positive"></td></tr>
+        <tr><td>Total Number Deaths:</td><td id="deaths"></td></tr>
+        <tr><td>Total Number Recovered:</td><td id="recovered"></td></tr>
       </table>
   </div>
   
 </body>
 </html>
 
+<script src="js/jquery.min.js"></script>
 <!-- MAKE NAVBAR STICKY -->
     <script>
     window.onscroll = function() {myFunction()};
@@ -46,26 +44,8 @@
         navbar.classList.remove("sticky");
       }
     }
-
-    function getCookie(cookie) {
-        var name = cookie + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-
-    var selected_state = getCookie("selected");
-    document.getElementById("state-title").innerHTML = selected_state;
     </script>
+<script src="js/update_profile.js"></script>
 
 </body>
 </html>
