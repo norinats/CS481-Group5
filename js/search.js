@@ -1,3 +1,6 @@
+/* Copyright 2017, Chris Youderian, SimpleMaps, http://simplemaps.com
+ Released under MIT license - https://opensource.org/licenses/MIT
+ */
 $(document).ready(function(){
 	var state_list=$("#state_list")
 	for (var state in simplemaps_usmap_mapdata.state_specific){
