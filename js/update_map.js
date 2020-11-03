@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
           if (cpercent > 0) {
             map_state['color'] = increase_brightness('#0071a4', cpercent);
           } else {
-            map_state['color'] = increase_brightness('#0071a4', cpercent + 9.5);
+            map_state['color'] = increase_brightness('#0071a4', 0);
           }
         }
       })
