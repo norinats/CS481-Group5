@@ -25,7 +25,7 @@ jQuery.ajax({
         jQuery.each(result, function(index, value){
             var state_id = result[index]["state"];
             if(state_id == selected_state) {
-                document.getElementById("update-time").innerHTML = result[index]["lastUpdateEt"];
+                document.getElementById("update-time").innerHTML = "Last Updated: " + result[index]["lastUpdateEt"];
                 document.getElementById("positive").innerHTML = result[index]["positive"];
                 document.getElementById("deaths").innerHTML = result[index]["death"];
                 document.getElementById("recovered").innerHTML = result[index]["recovered"];
