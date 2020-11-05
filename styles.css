@@ -94,9 +94,9 @@ html {
 
 }
 h1, h2, h3, h4, h5 {
-  color: black;
+  color: #f2f2f2;
   font-weight: bold;
-    font-family: Candara;
+  font-family: Segoe UI;
 }
 h1 {
   color: white;
@@ -106,8 +106,10 @@ h1 {
 }
 h2 {
   margin: 0px 0px 10px 0px;
-  font-weight: bold;
-  font-size: 30px;
+  font-size: 29px;
+}
+h3 {
+  margin: 0px 0px 10px 0px;
 }
 
 body {

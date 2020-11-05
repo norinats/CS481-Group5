@@ -11,7 +11,7 @@
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#covidinfo">COVID-19 Info</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="about.php">About</a></li>
       </div>
     </header>
     <main>
@@ -20,7 +20,7 @@
         <script src="js/mapdata.js"></script>
         <script src="js/usmap.js"></script>
         <script type="text/javascript" src="js/select.js"></script>
-        
+
         <script type='text/javascript' src='http://code.jquery.com/jquery-1.11.1.min.js'></script>
         <link rel="stylesheet" href="css/chosen.css">
         <script type='text/javascript' src='js/chosen.jquery.min.js'></script>
@@ -28,13 +28,12 @@
           <option value=""></option>
         </select>
         <script src="js/search.js"></script>
-        
+
         <script src="js/update_map.js"></script>
         <div id="map"></div>
     </div>
     </main>
 
-    
 <script>resetCookies();</script>
 
 <!-- MAKE NAVBAR STICKY -->
