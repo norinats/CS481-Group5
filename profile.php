@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>???</title>
+    <title id="tab-title"></title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="profile.css">
 </head>
@@ -17,12 +17,15 @@
   </header>
 
   <h1 id="state-title"></h1>
+  <div>
+    <p id="update-time"></p>
+  </div>
   <div id="stats">
-      <p id="test"></p>
       <table>
         <tr><td>Total Number Cases:</td><td id="positive"></td></tr>
         <tr><td>Total Number Deaths:</td><td id="deaths"></td></tr>
         <tr><td>Total Number Recovered:</td><td id="recovered"></td></tr>
+        <tr><td>Total Number Tests:</td><td id="tests"></td></tr>
       </table>
   </div>
   
