@@ -13,10 +13,11 @@ table, th, td {
 }
 
 tr {
-    background-color: #E48A3E;
+    background-color: #94d9e7;
 }
 
 #update-time {
     color: white;
     font-style: italic;
+    margin-left: 10px;
 }
