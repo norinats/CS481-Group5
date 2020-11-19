@@ -106,10 +106,13 @@ h1 {
 }
 h2 {
   margin: 0px 0px 10px 0px;
-  font-size: 29px;
+  font-size: 34px;
 }
 h3 {
   margin: 0px 0px 10px 0px;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 1.5;
 }
 
 body {
@@ -156,6 +159,16 @@ a[type="button"] {
 
 a[type="button"]:hover {
 	background-color: #5c6f9e;
+}
+
+#about {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 450px;
+  padding: 10px;
+  background: #445175;
+  border-radius: 15px;
 }
 
 /* Scroll bar */

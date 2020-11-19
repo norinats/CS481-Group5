@@ -9,8 +9,6 @@
         <div id="navbar">
         <li><h1>COVID TRACKER</h1></li>
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#covidinfo">COVID-19 Info</a></li>
         <li><a href="about.php">About</a></li>
       </div>
     </header>
