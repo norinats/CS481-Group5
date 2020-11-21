@@ -4,6 +4,8 @@
 
 table {
     border-collapse: collapse;
+    margin: auto;
+    width: 50%;
 }
 
 table, th, td {
@@ -13,7 +15,7 @@ table, th, td {
 }
 
 tr {
-    background-color: #94d9e7;
+    background-color: #8bcbd8;
 }
 
 #update-time {
@@ -21,3 +23,13 @@ tr {
     font-style: italic;
     margin-left: 10px;
 }
+
+#state-title {
+    text-align: center;
+}
+
+#update-time {
+    text-align: center;
+    padding-top: 5px;
+}
+
