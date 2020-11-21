@@ -15,9 +15,11 @@ function getCookie(cookie) {
     return "";
 }
 
+// UPDATE STATE
 var selected_state = getCookie("selected");
 document.getElementById("state-title").innerHTML = selected_state;
 
+// UPDATE TABLE
 jQuery.ajax({
     dataType: "json",
     url: 'https://api.covidtracking.com/v1/states/current.json',
