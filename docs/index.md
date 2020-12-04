@@ -5,7 +5,7 @@ We have created a website in which tracks covid information in the United States
 ## Usage
 
 To use the covid tracker, first access the website:
-https://safe-plains-70114.herokuapp.com
+[Safeplains](https://safe-plains-70114.herokuapp.com)
 
 Afterwards the webpage is displayed and you see the map, a search bar, and a navigation bar that leads back to the main page or the about page containing who created the website.
 
